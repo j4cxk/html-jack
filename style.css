@@ -1,21 +1,22 @@
 body {
-    background-color: rgb(10, 10, 25);
+    background-color: #040D12;
     margin: 30px 30px 0 30px;
 }
 
 h1 {
-    color: rgb(70, 188, 255);
+    color: #94B4C1;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 p {
-    color: rgb(190, 210, 220);
+    color: #F3F4F4;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer {
-    color: rgb(190, 210, 220);
-    text-align:end;
+    color: #F3F4F4;
+    text-align: end;
     margin-top: 10rem;
     font-size: 0.875rem;
 }
@@ -26,13 +27,13 @@ p {
     flex-direction: row;
     padding: 1rem;
     font-size: 1.25rem;
-    border: 3px solid rgb(70, 188, 255);
+    border: 3px solid #547792;
     border-radius: 19px;
     img{
         width: 25rem;
         height: 25rem;
         border-radius: 50%;
-        border-color: rgb(70, 188, 255);
+        border-color: #547792;
         border-width: 4px;
         border-style: solid;
     }
@@ -68,34 +69,41 @@ p {
 
 .second {
     margin-top: 2.5rem;
+    padding-top: 3px;
 }
+
 
 @media (max-width: 600px ) {
     .imgintro{
         flex-direction: column;
-
+        border-width: 3.2px;
         img{
             width: 15rem;
             height: 15rem;
-            border-width: 3px;
+            border-width: 2.75px;
         }
     }
+    
     .namediv {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
     .pdiv {
         font-size: 0.875rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 1024px) and (min-width: 601px) {
     .imgintro{
         flex-direction: column;
-
+        border-width: 3px;
         img{
             width: 20rem;
             height: 20rem;
-            border-width: 3px;
+            border-width: 2.5px;
         }
     }
     .namediv {
@@ -104,23 +112,30 @@ p {
     .pdiv {
         font-size: 1.125rem;
     }
+
+    h1 {
+        font-size: 1.75rem;
+    }
 }
 
 @media (min-width: 1025px) and (max-width: 1920px) {
     .imgintro{
         flex-direction: row;
-
+        border-width: 3px;
         img{
             width: 25rem;
             height: 25rem;
-            border-width: 4px;
+            border-width: 2.5px;
         }
     }
     .namediv {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         align-items: flex-start;
     }
     .pdiv {
         font-size: 1.1rem;
+    }
+    h1 {
+        font-size: 2rem;
     }
 }
