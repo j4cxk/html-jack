@@ -24,53 +24,49 @@ p {
 .imgintro{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
     padding: 1rem;
     font-size: 1.25rem;
     border: 3px solid #547792;
     border-radius: 19px;
-    img{
-        width: 25rem;
-        height: 25rem;
-        border-radius: 50%;
-        border-color: #547792;
-        border-width: 4px;
-        border-style: solid;
-    }
 }
 
-.intro {
-    display: flex;
-    font-size: 1.25rem;
+/* image inside intro container */
+.imgintro img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    border-color: #547792;
+    border-width: 4px;
+    border-style: solid;
 }
-
-.namediv {
+.mainpndiv {
     display: flex;
     flex-direction: column;
-    flex-shrink: 0;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .pdiv {
-    display: flex;
-    flex-direction: row;
+    display: block;
     flex-shrink: 0;
-    align-items: left;
-    justify-content: center;
+    margin: 0;
 }
 
 .ppimagediv {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px 30px 30px 30px;
+    margin-right: 2rem;
 }
 
 .thibox {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 15px;
     max-width: 850px;
     margin: 0 auto;
 }
@@ -116,6 +112,9 @@ p {
     h1 {
         font-size: 1.5rem;
     }
+    .thibox {
+        gap: 8px;
+    }
     .thibox > * {
         padding: 12px;
     }
@@ -159,9 +158,8 @@ p {
             border-width: 2.5px;
         }
     }
-    .namediv {
-        font-size: 2.5rem;
-        align-items: flex-start;
+    .mainpndiv {
+        align-items: baseline;
     }
     .pdiv {
         font-size: 1.1rem;
