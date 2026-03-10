@@ -114,6 +114,7 @@ p {
     }
     .thibox {
         display: flex;
+        max-width: max-content;
         flex-direction: column;
         justify-content: center;
         align-items: center;
