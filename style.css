@@ -42,6 +42,7 @@ p {
     border-width: 4px;
     border-style: solid;
 }
+
 .mainpndiv {
     display: flex;
     flex-direction: column;
@@ -52,6 +53,7 @@ p {
 .pdiv {
     display: block;
     flex-shrink: 0;
+    text-align: justify;
     margin: 0;
 }
 
@@ -77,18 +79,56 @@ p {
     flex-direction: column;
     border: 2.25px solid #547792;
     border-radius: 10px;
-    padding: 15px;
-    max-width: 50%;
+    padding: 18px;
+    max-width: 70%;
 }
+
 .thiboxtitle {
     color: #94B4C1;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+
 .thiboxp {
     color: #F3F4F4;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    margin: 0;
+    padding: 8px;
+    gap: 25px;
+    padding-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #94B4C1;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F3F4F4;
+    transition: width 0.4s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
 }
 
 @media (max-width: 600px ) {
@@ -112,22 +152,39 @@ p {
     h1 {
         font-size: 1.5rem;
     }
+
+    .footer {
+        font-size: 0.55rem;
+    }
+
     .thibox {
         display: flex;
-        max-width: max-content;
+        max-width: 380px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 18px;
     }
+
     .thibox > * {
         padding: 12px;
     }
+
     .thiboxtitle {
         font-size: 1.2rem;
     }
+
     .thiboxp {
         font-size: 0.70rem;
+    }
+
+    .navul {
+    font-size: small;
+    }
+
+    nav ul {
+        gap: 16px;
+        font-size: small
     }
 }
 
@@ -154,12 +211,18 @@ p {
 
     .thibox {
         display: flex;
-        width: 601px;
+        max-width: 700px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 18px;
     }
+
+    nav ul {
+        gap: 26px;
+        font-size: medium;
+    }
+
 }
 
 @media (min-width: 1025px) and (max-width: 1920px) {
@@ -186,6 +249,11 @@ p {
     }
 
     .thibox {
-        max-width: 1024px;
+        max-width: 1000px;
+    }
+
+    nav ul {
+        gap: 26px;
+        font-size: medium;
     }
 }
