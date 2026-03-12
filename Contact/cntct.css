@@ -36,6 +36,43 @@ p {
 
 /*Body*/
 
+/*Navigation Bar*/
+
+nav ul {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    margin: 0;
+    padding: 8px;
+    gap: 25px;
+    padding-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #94B4C1;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F3F4F4;
+    transition: width 0.4s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
 /*Connect and Contact*/
 /*Connect and Contact DIV*/
 .cgtdiv {
@@ -141,42 +178,7 @@ p {
 }
 
 
-/*Navigation Bar*/
 
-nav ul {
-    display: flex;
-    justify-content: end;
-    list-style-type: none;
-    margin: 0;
-    padding: 8px;
-    gap: 25px;
-    padding-bottom: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
-
-}
-
-nav a {
-    text-decoration: none;
-    color: #94B4C1;
-    position: relative;
-    padding-bottom: 6px;
-}
-
-nav a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #F3F4F4;
-    transition: width 0.4s ease;
-}
-
-nav a:hover::after {
-    width: 100%;
-}
 
 /*Media*/
 
@@ -221,6 +223,7 @@ nav a:hover::after {
 
     .dropdown-content {
         min-width: 18vh;
+        max-width: max-content;
         font-size: 10px;
         padding: 18px;
     }
