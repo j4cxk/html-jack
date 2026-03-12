@@ -1,16 +1,6 @@
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
 body {
     background-color: #040D12;
-    /* center content vertically & horizontally */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px; /* preserve the original spacing around content */
+    margin: 30px 30px 0 30px;
 }
 
 h1 {
@@ -48,10 +38,8 @@ p {
     border-radius: 10px;
     padding: 15px;
     max-width: 500px;
-    align-items: center;
-    justify-items: center;
-    /* allow the parent flex container to center this box */
-    margin: auto;
+    align-self: center;
+    justify-self: center;
 }
 
 .cgt1 {
@@ -66,6 +54,230 @@ p {
     text-align: center;
 }
 
+.cp1 {
+    color: #F3F4F4;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+/*C&C Get in Touch*/
+/* Container */
+.contact-dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+/* The Button */
+.dropbtn {
+  background-color: #94b4c1d2; 
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+/* The Content (Hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #050d12;
+  min-width: 270px;
+  box-shadow: 0px 8px 16px 0px #94b4c10e;
+  z-index: 1;
+  padding: 25px;
+  border-radius: 10px;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the box under the button */
+}
+
+/* Show on Hover */
+.contact-dropdown:hover .dropdown-content {
+  display: grid;
+}
+
+.phonen {
+    text-decoration: none;
+}
+
+.insta {
+    text-decoration: none;
+}
+
+/*ul & li*/
+.cntcli {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F3F4F4;
+    gap: 0.25rem;
+    /* reset default list spacing so items sit closer to container edge */
+    margin: 0;
+    padding: 0;
+}
+
+.cntclih {
+    color: #94B4C1;
+    font-weight: bold;
+}
+
+.gitul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #F3F4F4;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Navigation Bar*/
+
+nav ul {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    margin: 0;
+    padding: 8px;
+    gap: 25px;
+    padding-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #94B4C1;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F3F4F4;
+    transition: width 0.4s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/*Media*/
+
+@media (max-width: 600px ) {
+    
+    .pdiv {
+        font-size: 0.875rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        font-size: 0.55rem;
+    }
+
+    .navul {
+    font-size: small;
+    }
+
+    nav ul {
+        gap: 16px;
+        font-size: small
+    }
+
+    .ch1 {
+        font-size: 1.5rem;
+    }
+
+    .cp1 {
+        font-size: 0.875rem;
+    }
+    
+    .cntcli {
+        font-size: 0.85rem;
+    }
+    
+    .dropbtn {
+        max-width: 140px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 601px) {
+
+    .pdiv {
+        font-size: 1.125rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    nav ul {
+        gap: 26px;
+        font-size: medium;
+    }
+
+    .ch1 {
+        font-size: 1.75rem;
+    }
+    
+    .cp1 {
+        font-size: 1rem;
+    }
+    
+    .cntcli {
+        font-size: 0.85rem;
+    }
+    
+    .dropbtn {
+        max-width: 140px;
+    }
+    
+
+}
+
+@media (min-width: 1025px) and (max-width: 1920px) {
+
+    .pdiv {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .thibox {
+        max-width: 1000px;
+    }
+
+    nav ul {
+        gap: 26px;
+        font-size: medium;
+    }
+
+    .ch1 {
+        font-size: 2rem;
+    }
+    
+    .cp1 {
+        font-size: 1rem;
+    }
+    
+    .cntcli {
+        font-size: 0.9rem;
+    }
+}
 .cp1 {
     color: #F3F4F4;
     font-family: Arial, Helvetica, sans-serif;
